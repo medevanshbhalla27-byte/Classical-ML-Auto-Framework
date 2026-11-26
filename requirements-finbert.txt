@@ -1,0 +1,3 @@
+# Optional dependencies: install only when ENABLE_FINBERT_SENTIMENT = True
+torch
+transformers
