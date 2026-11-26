@@ -4,7 +4,7 @@ CLASSICAL ML AUTO-FRAMEWORK V4
 
 Run:
     pip install -U pandas numpy scikit-learn joblib openpyxl
-    python classical_ml_v4.py
+    python Framework.py
 
 Edit only the CONFIG section.
 
@@ -91,8 +91,8 @@ import os
 # 1. CONFIG - EDIT THESE SETTINGS
 # =====================================================================
 
-DATA_PATH = r"C:\Users\LENOVO\Desktop\train.csv"
-TASK = "classification"       # "classification", "regression", or "unsupervised"
+DATA_PATH = ""
+TASK = ""       # "classification", "regression", or "unsupervised"
 TARGET_COLUMN = ""      # exact column name; ignored for unsupervised
 
 OUTPUT_DIR = "ml_results_v4"
