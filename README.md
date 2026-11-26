@@ -44,20 +44,13 @@ Your GitHub repository can have this simple structure:
 ```text
 Classical-ML-Auto-Framework/
 │
-├── classical_ml_v4.py
+├── Framework.py
 ├── README.md
 ├── requirements.txt
 ├── requirements-finbert.txt
 ├── .gitignore
-│
-└── (Your dataset goes here locally, but do not upload private data)
+
 ```
-
-Rename your downloaded script to **`classical_ml_v4.py`** before adding it to the repository.
-
-The folders and files inside `ml_results_v4/` are generated when you run the framework. They do not need to be committed to GitHub.
-
----
 
 ## 3. Requirements
 
@@ -131,7 +124,7 @@ Your actual dataset must contain enough useful rows and more than one target val
 
 ## 6. Configure the framework
 
-Open `classical_ml_v4.py` and find the section:
+Open `Fraework.py` and find the section:
 
 ```python
 # 1. CONFIG - EDIT THESE SETTINGS
@@ -186,7 +179,7 @@ For your first experiment, it is sensible to keep most defaults unchanged and on
 After saving your configuration, run:
 
 ```bash
-python classical_ml_v4.py
+Framework.py
 ```
 
 The framework will:
@@ -252,7 +245,7 @@ For multiple text columns:
 TEXT_COLUMNS = ["review_text", "customer_comment"]
 ```
 
-The target column must not also be listed in `TEXT_COLUMNS`. The current V4 implementation does not support TF-IDF text columns in unsupervised mode.
+The target column must not also be listed in `TEXT_COLUMNS`. The current Framework implementation does not support TF-IDF text columns in unsupervised mode.
 
 ---
 
@@ -295,7 +288,7 @@ Make sure the new file contains the same feature columns used during training. F
 Then run the script again:
 
 ```bash
-python classical_ml_v4.py
+python Framework.py
 ```
 
 Predictions will be written to the configured output CSV file.
@@ -362,12 +355,7 @@ These files are generated outputs. Keep them locally unless you have a specific 
 
 ---
 
-## 15. License
-
-No license is included by default. If you want others to use, modify, and redistribute this project, choose a license and add its full license text in a file named `LICENSE`. Do not claim a license you have not actually added.
-
----
 
 ## Author
 
-Add your name, GitHub profile, and any acknowledgements here before publishing.
+Devansh ( AI Assisted Coded )
